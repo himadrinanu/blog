@@ -7,7 +7,7 @@
 }
 #right-block{
     position: sticky;
-    top: 20px;
+    top: 90px;
 }
 #add-blog .modal-header, #add-blog .modal-footer {
     border: none;
