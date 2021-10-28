@@ -1,28 +1,78 @@
-.card{
-    border: none;
-    border-radius: 35px;
+.card {
+  border: none;
+  border-radius: 35px;
 }
-#avatar{
-    border-radius: 50%;
+#avatar {
+  border-radius: 50%;
 }
-#right-block{
-    position: sticky;
-    top: 90px;
+#right-block {
+  position: sticky;
+  top: 90px;
 }
-#add-blog .modal-header, #add-blog .modal-footer {
-    border: none;
+#add-blog .modal-header,
+#add-blog .modal-footer {
+  border: none;
 }
-.floating-div{
-    position: fixed;
-    bottom: 50px;
-    right: 30px;
+.floating-div {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  animation: bounce 4s infinite linear;
 }
-.fa-whatsapp{
-    color: #1DA110;
-    font-size: 50px;
-    cursor: pointer;
-    transition: 0.3s ease;
+.floating-div:hover{
+    animation-play-state: paused;
 }
-.fa-whatsapp:hover{
-   transform: translateY(3px);
+.fa-whatsapp {
+  color: #1da110;
+  font-size: 50px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
+.fa-whatsapp:hover {
+  transform: translateY(3px);
+}
+#blog-title {
+  animation: color-change 4s infinite linear;
+}
+@keyframes color-change {
+  /* from{
+        color: red;
+    }
+    to{
+        color: black;
+    } */
+  0% {
+    color: red;
+  }
+  50%{
+    color: black;
+  }
+  100%{
+    color: red;
+  }
+}
+
+.rotate{
+    animation: rotate-image 4s infinite linear;
+}
+@keyframes rotate-image {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+  }
+
+  @keyframes bounce {
+    0% {
+        bottom: 50px;
+    }
+    50% {
+        bottom: 100px;
+    }
+    100% {
+        bottom: 50px;
+    }
+  }

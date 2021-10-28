@@ -22,7 +22,7 @@
 
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light p-3">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="#"><img src="image/blogging.png" width="40" alt=""></a>
+            <a class="navbar-brand fw-bold" href="#"><img src="image/blogging.png" class="rotate" width="40" alt=""></a>
             <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -69,8 +69,6 @@
     </div>
 
 
-
-
     <!-- Modal -->
     <div class="modal fade" id="add-blog" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -96,17 +94,10 @@
         </div>
     </div>
 
-
-
-
-
     <!-- floating div -->
     <div class="floating-div">
         <i class="fab fa-whatsapp" data-bs-toggle="tooltip" data-bs-placement="left" title="Whatsapp"></i>
     </div>
-
-
-
 
 
     <!-- Footer -->
@@ -155,6 +146,11 @@
                 title: 'Where does it come from?',
                 date: new Date(Date.now()).toDateString(),
                 desc: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using, content here, making it look like readable English.',
+            },
+            {
+                title: 'Where does it come from?',
+                date: new Date(Date.now()).toDateString(),
+                desc: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using, content here, making it look like readable English.',
             }
         ]
 
@@ -164,7 +160,7 @@
         function returnBlogs(blog, index) {
             blogs += `<div class="col-md-12 mb-4">
                         <div class="card p-4">
-                            <p class="fs-3 fw-bold">${blog.title}</p>
+                            <p class="fs-3 fw-bold" id="blog-title">${blog.title}</p>
                             <p class="fw-bold">${blog.date}</p>
                             <p>${blog.desc}</p>
                         </div>
