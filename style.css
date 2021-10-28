@@ -1,0 +1,28 @@
+.card{
+    border: none;
+    border-radius: 35px;
+}
+#avatar{
+    border-radius: 50%;
+}
+#right-block{
+    position: sticky;
+    top: 20px;
+}
+#add-blog .modal-header, #add-blog .modal-footer {
+    border: none;
+}
+.floating-div{
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+}
+.fa-whatsapp{
+    color: #1DA110;
+    font-size: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.fa-whatsapp:hover{
+   transform: translateY(3px);
+}
